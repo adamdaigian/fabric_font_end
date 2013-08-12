@@ -44,19 +44,11 @@ body {
   height:100%;
   max-width:500px;
   background-color:gold;
-  overflow: auto;
 }
 
-.cover-left {
-  margin-left: -475px;
-/*  position:absolute;
-  z-index:100;
-  top:0;
-  left:0;
-  width:30%;
-  height:100%;
-  max-width:500px;
-  background-color:gold;*/
+.cover {
+  overflow: auto;
+  /*height: auto;*/
 }
 
 .cover.img-loaded {
@@ -81,6 +73,28 @@ body {
 
 .cover {
   position:fixed;
+}
+
+.stream {
+  position:relative;
+  bottom:0;
+  padding:50px 10% 10%;
+  width:100%;
+  overflow: auto;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+.tweet img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-left: 60%;
+}
+
+.tweet {
+  height: 30px;
 }
 
 .wrapper {
@@ -124,13 +138,13 @@ body {
     top:0;
     left:0;
   }
-}
+} 
 
 @media all and (max-width:500px) {
   .cover {
-  height:300px;
-  top:0;
-  left:0;
+    height:300px;
+    top:0;
+    left:0;
   }
 
   .wrapper-inner {
@@ -138,6 +152,10 @@ body {
     max-width:100%;
   }
 
+  .stream {
+    padding:30px 5%;
+    max-width:100%;
+  }
 }
 
 @media all and (max-width:1000px) {

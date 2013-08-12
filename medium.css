@@ -828,25 +828,25 @@ overflow:auto
 }
 
 @media all and (max-width:1000px) {
-.wrapper {
-left:0;
-position:relative
-}
+	.wrapper {
+	left:0;
+	position:relative
+	}
 
-.wrapper-inner {
-padding:40px 10%;
-max-width:100%
-}
+	.wrapper-inner {
+	padding:40px 10%;
+	max-width:100%
+	}
 
-.system-page .wrapper-inner {
-padding-top:75px
-}
+	.system-page .wrapper-inner {
+	padding-top:75px
+	}
 }
 
 @media all and (max-width:500px) {
-.wrapper-inner {
-padding:30px 5%
-}
+	.wrapper-inner {
+	padding:30px 5%
+	}
 }
 
 @media all and (min-width:1666px) {
