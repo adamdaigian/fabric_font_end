@@ -98,6 +98,11 @@ body {
   position:fixed;
 }
 
+.profile {
+  padding:20px 10% 5%;
+  max-width:100%;
+}
+
 .well {
   position:relative;
   padding-bottom:50px;
@@ -106,10 +111,11 @@ body {
 }
 
 .tweet-well {
-  display:inline-block;
+  display:block;
   padding:0;
   width:100%;
-  margin-bottom: 10px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .tweet-well-title {
@@ -161,12 +167,12 @@ body {
   right:0;
   top:0;
   bottom:0;
-  background-color: aqua;
+  background-color: #fff;
   overflow-x:hidden;
   /*-webkit-overflow-scrolling:touch;*/
 }
 
-.wrapper-inner {
+.wrapper-paper {
   width:100%;
   -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
@@ -176,12 +182,23 @@ body {
   /*left:40%;*/
 }
 
-.wrapper-inner {
+.wrapper-paper {
   /*margin:0 auto;*/
   padding-top:100px;
   padding-left:5%;
   padding-right:5%;
 }
+
+.paper-article-title {
+  height:40px;
+  border-top:1px solid #dededc;
+  border-bottom:1px solid #dededc;
+  font-size:14px;
+  color:#b3b3b1;
+  font-family:"freight-sans-pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+  font-weight:700
+}
+
 
 /*=====MEDIA CALLS======*/
 
@@ -194,6 +211,16 @@ body {
     top:0;
     left:0;
   }
+
+  .wrapper {
+    left:0;
+    position:relative;
+  }
+
+  .wrapper-paper {
+    padding:40px 10%;
+    max-width:100%;
+  }
 }
 
 @media all and (max-width:500px) {
@@ -203,7 +230,7 @@ body {
     left:0;
   }
 
-  .wrapper-inner {
+  .wrapper-paper {
     padding:30px 5%;
     max-width:100%;
   }
@@ -212,39 +239,28 @@ body {
     padding:30px 5%;
     max-width:100%;
   }
-}
 
-@media all and (max-width:1000px) {
-  .wrapper {
-    left:0;
-    position:relative;
-  }
-
-  .wrapper-inner {
-    padding:40px 10%;
+  .profile {
+    padding:30px 5%;
     max-width:100%;
   }
 }
+
 
 @media all and (min-width:1666px) {
   .wrapper {
     left:500px
   }
 
-  .wrapper-inner {
+  .wrapper-paper {
     padding-left:185px;
-    max-width:910px
+    max-width:1000px
   }
 }
 
-@media all and (max-width:500px) {
-  .wrapper-inner {
-    padding:30px 5%;
-  }
-}
 
 @media all and (max-width:1100px) {
-  .tweet-well-text {
+  .tweet-well {
     margin-bottom:10px;
   }
 }
@@ -253,4 +269,14 @@ body {
   html {
     -webkit-text-size-adjust:none;
   }
+}
+
+::-moz-selection { 
+  background-color: #c0392b; 
+  color: #fff;
+}
+
+::selection {
+  background-color: #c0392b;
+  color: #fff;
 }
